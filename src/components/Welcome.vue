@@ -2,13 +2,13 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     
-   <button class="btn btn-primary">Login</button>
+   <button class="btn btn-dark mt-3">Login</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Welcome',
   props: {
     msg: String
   }
@@ -30,5 +30,7 @@ li {
 }
 a {
   color: #42b983;
+}
+button{width:70%;
 }
 </style>

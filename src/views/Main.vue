@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <HeaderNav />
+  <div id="main" class="">
+    <Nav />
     <img alt="background" src="../assets/coffee_bg.jpg">
     <Welcome msg="Welcome "/>
   </div>
@@ -8,14 +8,15 @@
 
 <script>
 // @ is an alias to /src
+import Nav from '@/components/Nav.vue'
 import Welcome from '@/components/Welcome.vue'
-import HeaderNav from '@/components/HeaderNav.vue'
+
 
 export default {
   name: 'Main',
   components: {
-    Welcome,
-    HeaderNav
+    Nav,
+    Welcome
   }
 }
 </script>
